@@ -26,7 +26,9 @@ if args.percent:
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
 for k,v in items:
     print(k,':',v)
-
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 #1 - take top part of output list of top 10 values 
 top10 = items[0:10]
 #2 - get keys & values by indexing (item 0 is key, item 1 is value) 
@@ -34,15 +36,17 @@ keyslist = [item[0] for item in top10]
 valueslist = [item[1] for item in top10]
 #3 - reverse order of keys & values (we want small -> large) (reverse the list)
 keyslist = keyslist[::-1]
+print(range(len(keyslist)),"keyslist")
 valueslist = valueslist[::-1]
+print("valueslist", valueslist)
 #4 - plot bar graph 
-plot.bar(range(len(keyslist)), valueslist)
-plot.xticks(range(len(keyslist)), keyslist)
+plt.bar(range(len(keyslist)), valueslist)
+plt.xticks(range(len(keyslist)), keyslist)
 
-
+print("hits")
+print(args.key[1:] , 'args.key')
 if args.input_path[-1] == 'g':
     plt.savefig(args.key[1:] + '_lang.png')
 else:
     plt.savefig(args.key[1:] + '_country.png')
-
 #add axis titles!!! 
