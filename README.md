@@ -26,17 +26,17 @@ The goal of this data analysis is to process and visualize tweets from 2020 that
 **Task 3 graphs:**
 The following graphs display the usage of a certain hashtag, first by country, and second by language. As expected, #coronavirus is used most often in the English language, while #코로나바이러스 is used most often in the Korean language.
 
-[usage of the #coronavirus hashtag by country](coronavirus_country.png)
+![usage of the #coronavirus hashtag by country](coronavirus_country.png)
 
-[usage of the #coronavirus hashtag by language](coronavirus_lang.png)
+![usage of the #coronavirus hashtag by language](coronavirus_lang.png)
 
-[usage of the #코로나바이러스 hashtag by country](코로나바이러스_country.png)
+![usage of the #코로나바이러스 hashtag by country](코로나바이러스_country.png)
 
-[usage of the #코로나바이러스 hashtag by language](코로나바이러스_lang.png)
+![usage of the #코로나바이러스 hashtag by language](코로나바이러스_lang.png)
 
 
 
 **Task 4 graphs:**
 The following graph shows the number of tweets sent on each day of 2020 that contain the #coronavirus hashtag.
 
-[number of tweets using the #coronavirus hashtag each day in 2020](./src/myplot5.png)
+![number of tweets using the #coronavirus hashtag each day in 2020](./src/myplot5.png)
